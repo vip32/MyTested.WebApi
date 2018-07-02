@@ -88,9 +88,10 @@ namespace MyTested.WebApi.Utilities.Validators
                 }
 
                 throw new InvalidCallAssertionException(string.Format(
-                    "{0}{1} was thrown but was not caught or expected. {2}",
+                    "{0}{1} was thrown but was not caught or expected. {2}{3}",
                     exception.GetType().ToFriendlyTypeName(),
                     message,
+                    Environment.NewLine
                     exception.StackTrace));
             }
         }
