@@ -1,6 +1,6 @@
 ﻿// MyTested.WebApi - ASP.NET Web API Fluent Testing Framework
 // Copyright (C) 2015 Ivaylo Kenov.
-// 
+//
 // Dual-licensed under the Apache License, Version 2.0, and the Microsoft Public License (Ms-PL).
 namespace MyTested.WebApi.Utilities.Validators
 {
@@ -74,10 +74,17 @@ namespace MyTested.WebApi.Utilities.Validators
                 {
                     var innerExceptions = exceptionAsAggregateException
                         .InnerExceptions
-                        .Select(ex => 
+                        .Select(ex =>
                             string.Format("{0}{1}", ex.GetName(), FormatExceptionMessage(ex.Message)));
 
                     message = string.Format(" (containing {0})", string.Join(", ", innerExceptions));
+                }
+                else
+                {
+                    if (exception.InnerException != null)
+                    {
+                        message = string.Format("{0}{1}(containing {2}{3})", message, Environment.NewLine, exception.InnerException.GetName(), FormatExceptionMessage(exception.InnerException.Message));
+                    }
                 }
 
                 throw new InvalidCallAssertionException(string.Format(
