@@ -91,7 +91,7 @@ namespace MyTested.WebApi.Utilities.Validators
                     "{0}{1} was thrown but was not caught or expected. {2}{3}",
                     exception.GetType().ToFriendlyTypeName(),
                     message,
-                    Environment.NewLine
+                    Environment.NewLine,
                     exception.StackTrace));
             }
         }
