@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MyTested.WebApi2</id>
+    <version>2.0.0</version>
+    <title>MyTested.WebApi2</title>
+    <authors>Ivaylo Kenov</authors>
+    <owners>Ivaylo Kenov</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/vip32/MyTested.WebApi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/vip32/MyTested.WebApi</projectUrl>
+    <iconUrl>https://github.com/vip32/MyTested.WebApi/master/documentation/nuget-logo.png</iconUrl>
+    <description>MyTested.WebApi2 is unit testing library providing easy fluent interface to test the ASP.NET Web API framework. See the project repository and documentation for more information and available features.</description>
+    <summary>Fluent testing framework for ASP.NET Web API 2.</summary>
+    <copyright>2015-2018 Ivaylo Kenov</copyright>
+    <language>en-US</language>
+    <tags>asp net web api fluent testing framework unit tests test mywebapi</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.5"/>
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.5"/>
+      <dependency id="Microsoft.Owin" version="4.0.0"/>
+      <dependency id="Microsoft.Owin.Hosting" version="4.0.0"/>
+      <dependency id="Microsoft.Owin.Testing" version="4.0.0"/>
+      <dependency id="Newtonsoft.Json" version="10.0.3"/>
+      <dependency id="Owin" version="1.0"/>
+    </dependencies>
+  </metadata>
+</package>
