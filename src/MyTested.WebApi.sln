@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{39A13EC7-93AC-417F-8F73-88517F751B26}"
 	ProjectSection(SolutionItems) = preProject
+		..\appveyor.yml = ..\appveyor.yml
 		MyTested.WebApi\MyTested.WebApi.nuspec = MyTested.WebApi\MyTested.WebApi.nuspec
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
